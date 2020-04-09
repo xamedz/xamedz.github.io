@@ -1,47 +1,75 @@
-# PRoJEct-NeGYa
+# Particle Jekyll Theme
 
-黑客风格的个人主页模板。
+![](./particle.jpg)
 
-版本： v1.01
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-## 特性
+The Theme features:
 
-1. 狂拽酷炫
-2. Rouge支持代码高亮
-3. MathJax公式
-4. 文章索引
-5. 高度可定制化
-6. 加密内容（也可以把元素id改成密文，元素内容写“无该字段访问权限！”）
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-## 更新日志
+## Basic Setup
 
-2019.7.17：更新说明文件
+1. [Install Jekyll](http://jekyllrb.com)
+2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+3. Edit `_config.yml` to personalize your site.
 
-2019.6.15：老子就做这一版，凑合能用得了，我可不改了啊！
+## Site and User Settings
 
-## 使用方法
+You have to fill some informations on `_config.yml` to customize your site.
 
-* 下载或者fork到自己的github仓库里
-* 修改_config.yml文件
-* （自定义域名）修改CNAME文件
-* 修改pages/index.md文件，自定义主页
-* 删除_posts/文件夹里的文件，添加自己的文章
-* 同步到github远程仓库
+```
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
-## 工程结构
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+```
 
-功能和内容隔离TMD！
+**Don't forget to change your url before you deploy your site!**
 
-网站内容：
-* _posts：文章
-* pages：页面
-* assets/img：图
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
 
-功能样式：
-* _includes：子页面模块
-* _layouts：页面模板（单纯地组合子页面模块）
-* assets/css：样式表文件
-* assets/fonts：字体文件
-* assets/js：脚本文件
-* _config.yml：配置文件
+## Running the blog in local
 
+In order to compile the assets and run Jekyll on local you need to follow those steps:
+
+- Install [NodeJS](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install dependencies: `yarn`
+- Run: `gulp`
+
+## Questions
+
+Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
+
+## License
+
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+
+## Credits
+
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)

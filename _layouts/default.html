@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   {% include head.html %}
-  <body class="page">
-    {% include background.html %}
-    <div class="container" id="ctner">
+  <body>
       {% include header.html %}
-      <div class="div_article" id="div_atcl">       
-        <article id="main_atcl" itemscope itemtype="http://schema.org/BlogPosting">
-          {{content}}
-          {% include list_of_articles.html %}
-        </article>
-          {% if page.footer == true %}
-          {% include footer.html %}
-          {% endif %}
-      </div>
-    </div>
+      <section id="about">
+        {% include about.html %}
+      </section>
+      <section id="projects">
+        {% include projects.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
   </body>
-</html>
